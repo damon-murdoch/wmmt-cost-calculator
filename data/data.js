@@ -12,15 +12,14 @@ const METER = [
   ["Default", 0],
   ["Yellow Meter", 100],
   ["Red Meter", 200],
-  ["Special Meter", 300],
-  ["Blue Meter", 400],
-  ["Carbon Meter", 500],
-  ["PRO", 600], 
-  ["Classic", 700], 
-  ["Digital Blue", 800], 
-  ["High-End Red", 900], 
-  ["Digital Yellow", 1000], 
-  ["High-End Yellow", 1100]
+  ["Blue Meter", 300],
+  ["Carbon Meter", 400],
+  ["PRO", 500], 
+  ["Classic", 600], 
+  ["Digital Blue", 700], 
+  ["High-End Red", 800], 
+  ["Digital Yellow", 9000], 
+  ["High-End Yellow", 1000]
 ];
 
 // Soundtracks
