@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      WMMT6RR Price Calculator
+    </title>
+
+    <!-- Bootstrap Stylesheet -->
+    <link rel='stylesheet' href='redist/bootstrap.min.css'>
+  </head>
+  <body class='text-light bg-dark'>
+    <!-- Container keeping page the correct width -->
+    <div class='container' style='width: 100%; max-width: 960px;'>
+      <div id='d_header' class='text-center' style='background-image:url(img/cover.png); background-position:center; border-radius:0px 0px 10px 10px;'>
+        <div style='background-color:rgba(0,0,0,0.7); padding-top:20px; padding-bottom:20px; border-radius:0px 0px 10px 10px;'>
+          <h1>
+            <!-- Wangan Midnight Maximum Tune 6 Car Editor -->
+            Maximum Tune 6RR Price Calculator
+          </h1>
+          <h3>
+            Price estimates for Meters, Dressup, VS Grades and more!
+          </h3>
+          <h5>
+            Created by 
+            <a href='https://www.twitter.com/SirScrubbington'>
+              SirScrubbington
+            </a>
+          </h5>
+          <h6>
+            Report a bug:
+            <a href='https://www.github.com/damon-murdoch/wmmt-file-editor/issues'>
+              Link
+            </a>
+          </h6>
+        </div>
+      </div>
+      <div id='d_body'>
+        <div class="text-center">
+          <table class="table text-light">
+            <thead>
+              <tr>
+                <th>
+                  Property
+                </th>
+                <th colspan=4>
+                  Settings
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>
+                  Custom Colour
+                </th>
+                <td colspan=4>
+                  <label>
+                    Desired Colour
+                  </label>
+                  <input class='form-control form-control-sm' name="colour" id="colour" type="number" min="0" max="40" value="0">
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  Colour Settings
+                </th>
+                <td colspan=2>
+                  <label>
+                    Last Unlocked Colour
+                  </label>
+                  <input class='form-control form-control-sm' name="current-colour" id="current-colour" type="number" min="0" max="40" value="0">
+                </td>
+                <td colspan=2>
+                  <label>
+                    Games to next colour
+                  </label>
+                  <input class='form-control form-control-sm' name="next-colour-games" id="next-colour-games" type="number" min="1" max="100" value="100">
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  Racing Meter
+                </th>
+                <td colspan=4>
+                  <label>
+                    Desired Meter
+                  </label>
+                  <select class='form-control form-control-sm' name="racing-meter" id="racing-meter">
+                    <!-- Racing Meter Drop-Down Here -->
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  Meter Settings
+                </th>
+                <td colspan=2>
+                  <label>
+                    Current Meter
+                  </label>
+                  <select class='form-control form-control-sm' name="current-meter" id="current-meter">
+                    <!-- Racing Meter Drop-Down Here -->
+                  </select>
+                </td>
+                <td colspan=2>
+                  <label>
+                    Win Streak
+                  </label>
+                  <input class='form-control form-control-sm' name="current-streak" id="current-streak" type="number" min="0" value="0">
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  Soundtrack
+                </th>
+                <td colspan=2>
+                  <label>
+                    Desired Soundtrack
+                  </label>
+                  <select class='form-control form-control-sm' id="soundtrack">
+                    <!-- Soundtrack Drop-Down Here -->
+                  </select>
+                </td>
+                <td colspan=2>
+                  <label>
+                    Completed Stories
+                  </label>
+                  <input class='form-control form-control-sm' name="completed-stories" id="completed-stories" type="number" min="0" value="0">
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  Dress-Up Level
+                </th>
+                <td colspan=2>
+                  <label>
+                    Desired Level
+                  </label>
+                  <input class='form-control form-control-sm' name="desired-dressup" id="desired-dressup" type="number" min="0" max="67" value="0">
+                </td>
+                <td colspan=2>
+                  <label>
+                    Current Level
+                  </label>
+                  <input class='form-control form-control-sm' name="current-dressup" id="current-dressup" type="number" min="0" max="67" value="0">
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  Ghost Opponents
+                </th>
+                <td colspan=4> 
+                  <label>
+                    Ghost Opponents
+                  </label>
+                  <input class='form-control form-control-sm' name="opponents" id="opponents" type="number" min="0" max="3" value="3">
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  Versus Grade
+                </th>
+                <td colspan=4>
+                  <label>
+                    Desired Grade
+                  </label>
+                  <select class='form-control form-control-sm' id="versus-grade">
+                    <!-- Versus Grade Drop-Down Here -->
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  Current Medals
+                </th>
+                <td>
+                  <label for="gold"> Gold </label>
+                  <input class='form-control form-control-sm' name="gold" id="gold" type="number" min="0" value="0">
+                </td>
+                <td>
+                  <label for="silver"> Silver </label>
+                  <input class='form-control form-control-sm' name="silver" id="silver" type="number" min="0" value="0">
+                </td>
+                <td>
+                  <label for="bronze"> Bronze </label>
+                  <input class='form-control form-control-sm' name="bronze" id="bronze" type="number" min="0" value="0">
+                </td>
+                <td>
+                  <label for="plain"> Plain </label>
+                  <input class='form-control form-control-sm' name="plain" id="plain" type="number" min="0" value="0">
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  Medal Ratio
+                </th>
+                <td colspan=4>
+                  <select id="ratio" class='form-control form-control-sm'>
+                    <option value="allgold" >
+                      All Gold
+                    </option>
+                    <option value="goldsilver">
+                      Even Gold & Silver
+                    </option>
+                    <option value="alleven">
+                      All Even
+                    </option>
+                    <option value="allplain">
+                      All Plain
+                    </option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  Total Cost
+                </th>
+                <td colspan=2>
+                  <label>
+                    Cost (Per Game)
+                  </label>
+                  <input class='form-control form-control-sm' name="cost" id="cost" type="number" min="0" value="2.50">
+                </td>
+                <td colspan class="align-bottom">
+                  <label>
+                    Calculate Cost
+                  </label>
+                  <button type="button" class="btn btn-sm btn-success form-control" onClick="calculateGames()">
+                    Calculate
+                  </button>
+                </td>
+                <td colspan class="align-bottom">
+                  <label>
+                    Reset Page
+                  </label>
+                  <button type="button" class="btn btn-sm btn-danger form-control" onClick="document.location.reload(true)">
+                    Reset
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <!-- Story Games -->
+                  <label>
+                    Story Games
+                  </label>
+                  <input class='form-control form-control-sm' name="story-games" id="story-games" type="number" min="0" value="0" disabled>
+                </td>
+                <td>
+                  <!-- Ghost Games -->
+                  <label>
+                    Ghost Games
+                  </label>
+                  <input class='form-control form-control-sm' name="ghost-games" id="ghost-games" type="number" min="0" value="0" disabled>
+                </td>
+                <td>
+                  <!-- Versus Games -->
+                  <label>
+                    Versus Games
+                  </label>
+                  <input class='form-control form-control-sm' name="versus-games" id="versus-games" type="number" min="0" value="0" disabled>
+                </td>
+                <td>
+                  <!-- Extra Games -->
+                  <label>
+                    Extra Games
+                  </label>
+                  <input class='form-control form-control-sm' name="extra-games" id="extra-games" type="number" min="0" value="0" disabled>
+                </td>
+                <td>
+                  <!-- Total Cost -->
+                  <label>
+                    Total Cost
+                  </label>
+                  <input class='form-control form-control-sm' name="total-cost" id="total-cost" type="number" min="0" value="0" disabled>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div id="script">
+      <!-- Data Source File -->
+      <script src="data/data.js" type="text/javascript">
+      </script>
+      
+      <!-- Main Program Source File -->
+      <script src="index.js" type="text/javascript">
+      </script>
+    </div>
+  </body>
+</html>
